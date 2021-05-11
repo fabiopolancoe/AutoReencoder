@@ -10,13 +10,7 @@ except:
 
 print("Welcome to AutoReencoder!\n")
 
-ffmpeg = input("Is ffmpeg installed and added to $PATH? [y/n] ")
-if ffmpeg.lower() == "y":
-    pass
-else:
-    print("Please install ffmpeg and make sure it's accessible globally")
-
-delete = input("Delete old files? [y/n] ")
+delete = input("Delete original files? [y/n] ")
 
 print("Listing directory...")
 dirlist = check_output("ls").decode().split("\n")
@@ -29,7 +23,7 @@ if len(argv) == 3:
             count += 1
             print("File found: \"" + file + "\". Reencoding to " + argv[2] + " format.")
             try:
-                temp = check_output(["ffmpeg", "-v", "error", "-i", file, file.replace(argv[1], argv[2])]).decode()
+                temp = check_output(["./ffmpeg", "-v", "error", "-i", file, file.replace(argv[1], argv[2])]).decode()
             except:
                 print("An error occured:\n")
                 raise
@@ -37,7 +31,7 @@ if len(argv) == 3:
                 print("File reencoded succesfully!")
 
             if delete.lower() == "y":
-                print("Deleting old file")
+                print("Deleting original file")
                 temp = check_output(["rm", file])
     print("Finished all reencodings.\nTotal: " + str(count) + "\nBye!")
     bye(0)            
