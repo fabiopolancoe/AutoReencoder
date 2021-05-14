@@ -35,7 +35,4 @@ to mp3, obviously if you only want to convert ONE file, you can cheat and pass `
 
 Here's an example:
 
-<video width="320" height="240" controls>
-  <source src="https://github.com/fabiopolancoe/AutoReencoder/blob/main/test.mp4?raw=true" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+![Usage example](https://github.com/fabiopolancoe/AutoReencoder/blob/main/test.gif?raw=true)
