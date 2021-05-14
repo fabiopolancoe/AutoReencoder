@@ -4,7 +4,7 @@ Script to automatically reencode multimedia files using Python and ffmpeg.
 **NOTE: This only works on Linux systems**
 
 ## Usage:
-If you run `main.py`, you should install ffmpeg first in your system. You can directly run the command without needing to call Python, but you must have Python3 installed.
+If you run `main.py`, you should install ffmpeg first in your system (or use download the .tar.gz from releases). You can directly run the command without needing to call Python, but you must have Python3 installed.
 
 ```sh
 ./main.py <input> <output>
@@ -35,4 +35,4 @@ to mp3, obviously if you only want to convert ONE file, you can cheat and pass `
 
 Here's an example:
 
-<video with="400" height="275" src="test.mp4" autoplay loop />
+<video with="400" height="275" src="https://github.com/fabiopolancoe/AutoReencoder/blob/main/test.mp4?raw=true" autoplay loop />
