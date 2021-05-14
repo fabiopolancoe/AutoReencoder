@@ -35,4 +35,4 @@ to mp3, obviously if you only want to convert ONE file, you can cheat and pass `
 
 Here's an example:
 
-<video with="400" height="275" src="https://github.com/fabiopolancoe/AutoReencoder/blob/main/test.mp4?raw=true" autoplay loop />
+<video with="400" height="275" src="https://github.com/fabiopolancoe/AutoReencoder/blob/main/test.mp4?raw=true"/>
